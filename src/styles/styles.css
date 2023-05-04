@@ -1,0 +1,90 @@
+/* Page structure */
+body {
+  background-color: #72CDF9;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('https://cdn.glitch.global/43f3e6d7-ef70-4a38-9bb5-aed736fc77dc/chuttersnap-rOAFxjnfRgg-unsplash.jpg?v=1682479943557');
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+a {
+  color: #000000;
+}
+
+a:hover {
+  color: #343434;
+}
+
+/* Post */
+.postWrapper {
+  background-color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 8px rgba(72, 92, 255, 0.2);
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  min-width: 150px;
+  max-width: 300px;
+  position: absolute;
+  overflow-wrap: break-word;
+}
+
+.postWrapper:hover {
+  box-shadow: 3px 3px 8px rgba(72, 92, 255, 0.4);
+  z-index: 99999 !important;
+}
+
+.postMetadata {
+  display: flex;
+  flex-direction: row;
+}
+
+.postUser {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.postDate {
+  font-size: 10px;
+  color: rgba(0,0,0,.5);
+}
+
+.shim {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: 0;
+  background-image: url('https://cdn.glitch.global/43f3e6d7-ef70-4a38-9bb5-aed736fc77dc/chuttersnap-rOAFxjnfRgg-unsplash.jpg?v=1682479943557');
+  background-size: cover;
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 50%);
+  mask-image: linear-gradient(to bottom, black 0%, transparent 50%);
+  opacity: 1;
+  z-index: 99998 !important;
+  pointer-events: none !important;
+}
+
+@keyframes example {
+  0% {opacity: 1;}
+  50% {opacity: 0.3;}
+  100% {opacity: 1;}
+}
+
+.welcomeMessage {
+  position: absolute;
+  top: 0;
+  z-index: 99999;
+  font-size: 28px;
+  font-weight: 700;
+  color: #0A4A69;
+  transform: translate(-50%, -50%);
+  top: 40%;
+  left: 50%;
+  animation-iteration-count: infinite;
+  animation-name: example;
+  animation-duration: 2s;
+}
