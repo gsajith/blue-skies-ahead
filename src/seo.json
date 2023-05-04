@@ -1,0 +1,7 @@
+{
+  "glitch-help-instructions": "For a custom domain, change the 'url' parameter from 'glitch-default' to your domain _without_ a traling slash, like 'https://www.example.com'",
+  "title": "Blue Skies Ahead",
+  "description": "Every Bluesky Post",
+  "url": "blue-skies-ahead",
+  "image": "https://staging.bsky.app/static/favicon-32x32.png"
+}
